@@ -1,0 +1,23 @@
+# Config file for TADpred v1.
+
+########## ANALYSIS DIRECTORY ##########
+# The absolute path to the directory where the files specific to 
+# your analysis will be saved.
+# Should not be the same as the Rproject directory, since
+# you may want to use that several times for different analyses.
+# For example: /tsd/p33/data/durable/characters/kristofs/TADpred_TOP_SCZ
+analysis_path: /tsd/p33/data/durable/characters/kristofs/TADpred_TOP_SCZ
+
+########## TRAINING DATA DIRECTORY ##########
+# The absolute path to your training data file.
+training_data_path: /tsd/p33/data/durable/characters/kristofs/For_Kristoffer/meta_analyses_for_training_datasets/Meta_analyses_files/SCZ_notop_sex_stratified_meta_analysis.csv
+
+########## TEST DATA DIRECTORY ##########
+# The absolute path to your test data file.
+test_data_path: /tsd/p33/data/durable/characters/kristofs/For_Kristoffer/Residuals/all_samples/residuals_betas_allMarkosCovariables-withSex_wholeSample.Robj
+
+########## PHENOTYPE DATA DIRECTORY FOR TEST DATA ##########
+# The absolute path to your phenotype data
+pheno_path: /tsd/p33/data/durable/characters/kristofs/For_Kristoffer/Clean-files_Methylation-betas-and-samplesheet/samplesheets/samplesheet_whole_samples.RData
+
+

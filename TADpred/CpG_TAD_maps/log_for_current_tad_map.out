@@ -1,0 +1,1616 @@
+Starting job 19256587 on c2-23 at Tue Mar 19 15:53:16 CET 2024
+
+tad data:
+'data.frame':	3532 obs. of  4 variables:
+ $ TADid: num  1 2 3 4 5 6 7 8 9 10 ...
+ $ chrom: chr  "chr1" "chr1" "chr1" "chr1" ...
+ $ start: int  735380 1285380 1649873 1881439 2604991 2634110 2623908 2628000 2689643 2686931 ...
+ $ end  : int  1285380 1881439 1649942 3766564 2605041 2634150 2628000 2632784 2689729 2687255 ...
+Any NA values:[1] FALSE
+
+Manifest(s) used: both 
+
+I450K:
+'data.frame':	438751 obs. of  2 variables:
+ $ CHR    : chr  "Y" "Y" "Y" "Y" ...
+ $ MAPINFO: int  9363356 22741795 21664296 21239348 8148233 15815688 14649908 2802965 21868532 21036986 ...
+Any NA values:[1] TRUE
+
+
+EPIC:
+'data.frame':	810197 obs. of  2 variables:
+ $ CHR    : chr  "19" "20" "1" "2" ...
+ $ MAPINFO: int  5236016 61847650 6841125 198303466 24072640 93581139 57865112 15248173 144921929 131463936 ...
+Any NA values:[1] FALSE
+
+########## PROCESSING CHROMOSOME 1 ##########
+
+number of TADs in chromosome 1 : 286 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr1"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "1"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "1"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 1 :
+[1] "nr of cpgs in I450K:"
+[1] 42606
+[1] "nr of cpgs in EPIC:"
+[1] 76944
+[1] "intersect:"
+[1] 38835
+[1] "cpgs unique to I450K:"
+[1] 3771
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 80715
+[1] "should be the same as:"
+[1] 80715
+
+[1] "mapping TADs..."
+
+NOTE:  chr1 1649873 1649942 matched to zero CpGs.
+
+NOTE:  chr1 2604991 2605041 matched to zero CpGs.
+
+NOTE:  chr1 2634110 2634150 matched to zero CpGs.
+
+NOTE:  chr1 2623908 2628000 matched to zero CpGs.
+
+NOTE:  chr1 2689643 2689729 matched to zero CpGs.
+
+NOTE:  chr1 2686931 2687255 matched to zero CpGs.
+
+NOTE:  chr1 145353722 145353878 matched to zero CpGs.
+
+NOTE:  chr1 145324065 145324093 matched to zero CpGs.
+
+NOTE:  chr1 145354776 145354810 matched to zero CpGs.
+
+NOTE:  chr1 145354776 145354810 matched to zero CpGs.
+
+NOTE:  chr1 145317802 145317850 matched to zero CpGs.
+
+NOTE:  chr1 145357173 145357200 matched to zero CpGs.
+
+NOTE:  chr1 148010036 148010089 matched to zero CpGs.
+
+NOTE:  chr1 228771372 228771405 matched to zero CpGs.
+
+NOTE:  chr1 228763058 228763094 matched to zero CpGs.
+
+NOTE:  chr1 150502078 150502192 matched to zero CpGs.
+
+NOTE:  chr1 183720223 183720275 matched to zero CpGs.
+
+NOTE:  chr1 168328505 168328558 matched to zero CpGs.
+
+NOTE:  chr1 192500626 192500683 matched to zero CpGs.
+
+NOTE:  chr1 76286749 76286810 matched to zero CpGs.
+
+NOTE:  chr1 157267004 157267068 matched to zero CpGs.
+
+NOTE:  chr1 42720358 42720387 matched to zero CpGs.
+
+NOTE:  chr1 228572173 228572475 matched to zero CpGs.
+
+NOTE:  chr1 210616553 210616610 matched to zero CpGs.
+
+NOTE:  chr1 184400537 184400597 matched to zero CpGs.
+
+NOTE:  chr1 55579559 55579611 matched to zero CpGs.
+
+mapping TADs for chromosome 1 done.
+[1] "cpgs in tad map so far:"
+[1] 74533
+
+########## PROCESSING CHROMOSOME 2 ##########
+
+number of TADs in chromosome 2 : 262 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr2"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "2"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "2"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 2 :
+[1] "nr of cpgs in I450K:"
+[1] 31548
+[1] "nr of cpgs in EPIC:"
+[1] 60923
+[1] "intersect:"
+[1] 28926
+[1] "cpgs unique to I450K:"
+[1] 2622
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 63545
+[1] "should be the same as:"
+[1] 63545
+
+[1] "mapping TADs..."
+
+NOTE:  chr2 131936124 131936169 matched to zero CpGs.
+
+NOTE:  chr2 842743 842834 matched to zero CpGs.
+
+NOTE:  chr2 845230 845258 matched to zero CpGs.
+
+NOTE:  chr2 36182240 36182274 matched to zero CpGs.
+
+NOTE:  chr2 59350353 59350418 matched to zero CpGs.
+
+NOTE:  chr2 97086526 97086614 matched to zero CpGs.
+
+NOTE:  chr2 180082421 180082527 matched to zero CpGs.
+
+NOTE:  chr2 113897832 113897947 matched to zero CpGs.
+
+NOTE:  chr2 202198283 202198339 matched to zero CpGs.
+
+NOTE:  chr2 240140619 240140690 matched to zero CpGs.
+
+NOTE:  chr2 98692962 98693062 matched to zero CpGs.
+
+NOTE:  chr2 76789750 76789775 matched to zero CpGs.
+
+NOTE:  chr2 198446386 198446448 matched to zero CpGs.
+
+NOTE:  chr2 153854099 153854159 matched to zero CpGs.
+
+NOTE:  chr2 82172314 82172359 matched to zero CpGs.
+
+mapping TADs for chromosome 2 done.
+[1] "cpgs in tad map so far:"
+[1] 133289
+
+########## PROCESSING CHROMOSOME 3 ##########
+
+number of TADs in chromosome 3 : 243 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr3"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "3"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "3"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 3 :
+[1] "nr of cpgs in I450K:"
+[1] 22960
+[1] "nr of cpgs in EPIC:"
+[1] 46332
+[1] "intersect:"
+[1] 21302
+[1] "cpgs unique to I450K:"
+[1] 1658
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 47990
+[1] "should be the same as:"
+[1] 47990
+
+[1] "mapping TADs..."
+
+NOTE:  chr3 84728913 84728935 matched to zero CpGs.
+
+NOTE:  chr3 101165132 101165186 matched to zero CpGs.
+
+NOTE:  chr3 173861937 173862013 matched to zero CpGs.
+
+NOTE:  chr3 82669677 82669714 matched to zero CpGs.
+
+NOTE:  chr3 42024228 42024294 matched to zero CpGs.
+
+NOTE:  chr3 186029623 186029950 matched to zero CpGs.
+
+NOTE:  chr3 11334230 11334337 matched to zero CpGs.
+
+NOTE:  chr3 119046476 119046590 matched to zero CpGs.
+
+NOTE:  chr3 57387010 57387222 matched to zero CpGs.
+
+NOTE:  chr3 144779567 144779619 matched to zero CpGs.
+
+NOTE:  chr3 43016397 43016434 matched to zero CpGs.
+
+NOTE:  chr3 97552264 97552321 matched to zero CpGs.
+
+NOTE:  chr3 22078057 22078176 matched to zero CpGs.
+
+NOTE:  chr3 66969726 66969796 matched to zero CpGs.
+
+NOTE:  chr3 19901415 19901472 matched to zero CpGs.
+
+NOTE:  chr3 155261632 155261731 matched to zero CpGs.
+
+NOTE:  chr3 78536280 78536347 matched to zero CpGs.
+
+NOTE:  chr3 142250253 142250327 matched to zero CpGs.
+
+NOTE:  chr3 81536303 81536370 matched to zero CpGs.
+
+NOTE:  chr3 105793519 105793548 matched to zero CpGs.
+
+NOTE:  chr3 64030624 64030746 matched to zero CpGs.
+
+NOTE:  chr3 188163015 188163072 matched to zero CpGs.
+
+NOTE:  chr3 38829403 38829510 matched to zero CpGs.
+
+mapping TADs for chromosome 3 done.
+[1] "cpgs in tad map so far:"
+[1] 178989
+
+########## PROCESSING CHROMOSOME 4 ##########
+
+number of TADs in chromosome 4 : 207 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr4"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "4"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "4"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 4 :
+[1] "nr of cpgs in I450K:"
+[1] 18366
+[1] "nr of cpgs in EPIC:"
+[1] 34340
+[1] "intersect:"
+[1] 17019
+[1] "cpgs unique to I450K:"
+[1] 1347
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 35687
+[1] "should be the same as:"
+[1] 35687
+
+[1] "mapping TADs..."
+
+NOTE:  chr4 191006989 191007012 matched to zero CpGs.
+
+NOTE:  chr4 19068151 19068181 matched to zero CpGs.
+
+NOTE:  chr4 15357779 15357829 matched to zero CpGs.
+
+NOTE:  chr4 96092664 96092709 matched to zero CpGs.
+
+NOTE:  chr4 46575076 46575127 matched to zero CpGs.
+
+NOTE:  chr4 17002751 17002781 matched to zero CpGs.
+
+NOTE:  chr4 189399608 189399690 matched to zero CpGs.
+
+NOTE:  chr4 1422215 1422260 matched to zero CpGs.
+
+NOTE:  chr4 1421919 1421984 matched to zero CpGs.
+
+NOTE:  chr4 1422085 1422115 matched to zero CpGs.
+
+NOTE:  chr4 1422358 1422408 matched to zero CpGs.
+
+NOTE:  chr4 40297560 40297622 matched to zero CpGs.
+
+NOTE:  chr4 40297249 40297356 matched to zero CpGs.
+
+NOTE:  chr4 112455868 112455934 matched to zero CpGs.
+
+NOTE:  chr4 77798661 77798698 matched to zero CpGs.
+
+NOTE:  chr4 76929315 76929375 matched to zero CpGs.
+
+NOTE:  chr4 103677201 103677266 matched to zero CpGs.
+
+NOTE:  chr4 77839203 77839251 matched to zero CpGs.
+
+NOTE:  chr4 17731415 17731477 matched to zero CpGs.
+
+NOTE:  chr4 178766925 178767054 matched to zero CpGs.
+
+NOTE:  chr4 122493790 122493834 matched to zero CpGs.
+
+NOTE:  chr4 113420150 113420179 matched to zero CpGs.
+
+NOTE:  chr4 87293055 87293116 matched to zero CpGs.
+
+NOTE:  chr4 91128608 91128649 matched to zero CpGs.
+
+NOTE:  chr4 39675863 39675915 matched to zero CpGs.
+
+NOTE:  chr4 188442072 188442133 matched to zero CpGs.
+
+NOTE:  chr4 28304727 28304750 matched to zero CpGs.
+
+NOTE:  chr4 21161013 21167053 matched to zero CpGs.
+
+mapping TADs for chromosome 4 done.
+[1] "cpgs in tad map so far:"
+[1] 212987
+
+########## PROCESSING CHROMOSOME 5 ##########
+
+number of TADs in chromosome 5 : 192 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr5"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "5"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "5"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 5 :
+[1] "nr of cpgs in I450K:"
+[1] 22027
+[1] "nr of cpgs in EPIC:"
+[1] 42072
+[1] "intersect:"
+[1] 20395
+[1] "cpgs unique to I450K:"
+[1] 1632
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 43704
+[1] "should be the same as:"
+[1] 43704
+
+[1] "mapping TADs..."
+
+NOTE:  chr5 37415403 37415433 matched to zero CpGs.
+
+NOTE:  chr5 107949522 107949574 matched to zero CpGs.
+
+NOTE:  chr5 106274471 106274524 matched to zero CpGs.
+
+NOTE:  chr5 81406021 81406079 matched to zero CpGs.
+
+NOTE:  chr5 131941770 131941820 matched to zero CpGs.
+
+NOTE:  chr5 143972760 143972803 matched to zero CpGs.
+
+NOTE:  chr5 63239637 63239697 matched to zero CpGs.
+
+NOTE:  chr5 53564296 53564343 matched to zero CpGs.
+
+NOTE:  chr5 171727924 171727964 matched to zero CpGs.
+
+NOTE:  chr5 46157028 46157085 matched to zero CpGs.
+
+NOTE:  chr5 70900810 70900909 matched to zero CpGs.
+
+NOTE:  chr5 42979987 42980045 matched to zero CpGs.
+
+NOTE:  chr5 170485712 170485743 matched to zero CpGs.
+
+NOTE:  chr5 120940732 120940782 matched to zero CpGs.
+
+NOTE:  chr5 75275678 75275730 matched to zero CpGs.
+
+mapping TADs for chromosome 5 done.
+[1] "cpgs in tad map so far:"
+[1] 255025
+
+########## PROCESSING CHROMOSOME 6 ##########
+
+number of TADs in chromosome 6 : 204 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr6"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "6"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "6"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 6 :
+[1] "nr of cpgs in I450K:"
+[1] 32529
+[1] "nr of cpgs in EPIC:"
+[1] 50449
+[1] "intersect:"
+[1] 29404
+[1] "cpgs unique to I450K:"
+[1] 3125
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 53574
+[1] "should be the same as:"
+[1] 53574
+
+[1] "mapping TADs..."
+
+NOTE:  chr6 910514 910592 matched to zero CpGs.
+
+NOTE:  chr6 142604459 142604530 matched to zero CpGs.
+
+NOTE:  chr6 52731846 52731901 matched to zero CpGs.
+
+NOTE:  chr6 74717303 74717368 matched to zero CpGs.
+
+NOTE:  chr6 19226138 19226250 matched to zero CpGs.
+
+NOTE:  chr6 51069476 51069545 matched to zero CpGs.
+
+NOTE:  chr6 118447970 118448012 matched to zero CpGs.
+
+NOTE:  chr6 27911100 27911157 matched to zero CpGs.
+
+NOTE:  chr6 75723558 75723616 matched to zero CpGs.
+
+NOTE:  chr6 80761646 80761677 matched to zero CpGs.
+
+NOTE:  chr6 121585873 121585929 matched to zero CpGs.
+
+NOTE:  chr6 23780015 23780125 matched to zero CpGs.
+
+NOTE:  chr6 165787129 165787196 matched to zero CpGs.
+
+NOTE:  chr6 165124050 165124182 matched to zero CpGs.
+
+NOTE:  chr6 117983259 117983334 matched to zero CpGs.
+
+NOTE:  chr6 169093604 169094676 matched to zero CpGs.
+
+NOTE:  chr6 39615482 39615546 matched to zero CpGs.
+
+NOTE:  chr6 100074647 100074672 matched to zero CpGs.
+
+NOTE:  chr6 56428871 56428923 matched to zero CpGs.
+
+NOTE:  chr6 160984502 160984546 matched to zero CpGs.
+
+mapping TADs for chromosome 6 done.
+[1] "cpgs in tad map so far:"
+[1] 303808
+
+########## PROCESSING CHROMOSOME 7 ##########
+
+number of TADs in chromosome 7 : 171 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr7"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "7"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "7"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 7 :
+[1] "nr of cpgs in I450K:"
+[1] 26298
+[1] "nr of cpgs in EPIC:"
+[1] 43443
+[1] "intersect:"
+[1] 23795
+[1] "cpgs unique to I450K:"
+[1] 2503
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 45946
+[1] "should be the same as:"
+[1] 45946
+
+[1] "mapping TADs..."
+
+NOTE:  chr7 10693499 10693770 matched to zero CpGs.
+
+NOTE:  chr7 117607348 117607415 matched to zero CpGs.
+
+NOTE:  chr7 20644633 20644698 matched to zero CpGs.
+
+NOTE:  chr7 70678282 70678343 matched to zero CpGs.
+
+NOTE:  chr7 20306407 20306434 matched to zero CpGs.
+
+NOTE:  chr7 104256470 104256531 matched to zero CpGs.
+
+NOTE:  chr7 106564702 106564752 matched to zero CpGs.
+
+NOTE:  chr7 147009379 147009492 matched to zero CpGs.
+
+NOTE:  chr7 13716952 13716997 matched to zero CpGs.
+
+NOTE:  chr7 111105689 111105722 matched to zero CpGs.
+
+NOTE:  chr7 72413443 72413494 matched to zero CpGs.
+
+NOTE:  chr7 74884661 74884705 matched to zero CpGs.
+
+NOTE:  chr7 108508172 108508363 matched to zero CpGs.
+
+NOTE:  chr7 108508169 108508364 matched to zero CpGs.
+
+NOTE:  chr7 107896269 107896324 matched to zero CpGs.
+
+NOTE:  chr7 109313835 109313870 matched to zero CpGs.
+
+NOTE:  chr7 14882946 14883258 matched to zero CpGs.
+
+mapping TADs for chromosome 7 done.
+[1] "cpgs in tad map so far:"
+[1] 344750
+
+########## PROCESSING CHROMOSOME 8 ##########
+
+number of TADs in chromosome 8 : 184 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr8"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "8"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "8"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 8 :
+[1] "nr of cpgs in I450K:"
+[1] 18922
+[1] "nr of cpgs in EPIC:"
+[1] 36181
+[1] "intersect:"
+[1] 17246
+[1] "cpgs unique to I450K:"
+[1] 1676
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 37857
+[1] "should be the same as:"
+[1] 37857
+
+[1] "mapping TADs..."
+
+NOTE:  chr8 92312628 92312924 matched to zero CpGs.
+
+NOTE:  chr8 28433840 28434001 matched to zero CpGs.
+
+NOTE:  chr8 94501320 94501399 matched to zero CpGs.
+
+NOTE:  chr8 100215306 100215330 matched to zero CpGs.
+
+NOTE:  chr8 77276979 77277022 matched to zero CpGs.
+
+NOTE:  chr8 88664711 88664778 matched to zero CpGs.
+
+NOTE:  chr8 25517230 25517295 matched to zero CpGs.
+
+NOTE:  chr8 34583248 34583277 matched to zero CpGs.
+
+NOTE:  chr8 105231727 105231869 matched to zero CpGs.
+
+NOTE:  chr8 1245943 1245988 matched to zero CpGs.
+
+NOTE:  chr8 1250480 1250576 matched to zero CpGs.
+
+NOTE:  chr8 2033625 2033678 matched to zero CpGs.
+
+NOTE:  chr8 2033843 2033870 matched to zero CpGs.
+
+NOTE:  chr8 2086937 2086970 matched to zero CpGs.
+
+NOTE:  chr8 2329383 2329421 matched to zero CpGs.
+
+NOTE:  chr8 2195571 2195643 matched to zero CpGs.
+
+NOTE:  chr8 2195416 2195457 matched to zero CpGs.
+
+NOTE:  chr8 2329224 2329275 matched to zero CpGs.
+
+NOTE:  chr8 2329212 2329269 matched to zero CpGs.
+
+NOTE:  chr8 2195634 2195681 matched to zero CpGs.
+
+NOTE:  chr8 2329383 2329431 matched to zero CpGs.
+
+NOTE:  chr8 2329351 2329420 matched to zero CpGs.
+
+NOTE:  chr8 2329497 2329521 matched to zero CpGs.
+
+NOTE:  chr8 2329314 2329345 matched to zero CpGs.
+
+NOTE:  chr8 2195494 2195558 matched to zero CpGs.
+
+NOTE:  chr8 2195628 2195680 matched to zero CpGs.
+
+NOTE:  chr8 2216203 2216232 matched to zero CpGs.
+
+NOTE:  chr8 2216203 2216232 matched to zero CpGs.
+
+NOTE:  chr8 48215129 48226228 matched to zero CpGs.
+
+NOTE:  chr8 65759764 65759926 matched to zero CpGs.
+
+NOTE:  chr8 144286518 144286570 matched to zero CpGs.
+
+NOTE:  chr8 144286759 144286816 matched to zero CpGs.
+
+NOTE:  chr8 21685959 21686042 matched to zero CpGs.
+
+mapping TADs for chromosome 8 done.
+[1] "cpgs in tad map so far:"
+[1] 378654
+
+########## PROCESSING CHROMOSOME 9 ##########
+
+number of TADs in chromosome 9 : 118 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr9"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "9"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "9"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 9 :
+[1] "nr of cpgs in I450K:"
+[1] 8907
+[1] "nr of cpgs in EPIC:"
+[1] 24689
+[1] "intersect:"
+[1] 8113
+[1] "cpgs unique to I450K:"
+[1] 794
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 25483
+[1] "should be the same as:"
+[1] 25483
+
+[1] "mapping TADs..."
+
+NOTE:  chr9 116012897 116012966 matched to zero CpGs.
+
+NOTE:  chr9 15556645 15556703 matched to zero CpGs.
+
+NOTE:  chr9 104056264 104056342 matched to zero CpGs.
+
+NOTE:  chr9 25102299 25102335 matched to zero CpGs.
+
+NOTE:  chr9 72126423 72126500 matched to zero CpGs.
+
+NOTE:  chr9 10142917 10142992 matched to zero CpGs.
+
+NOTE:  chr9 17201093 17201142 matched to zero CpGs.
+
+mapping TADs for chromosome 9 done.
+[1] "cpgs in tad map so far:"
+[1] 400195
+
+########## PROCESSING CHROMOSOME 10 ##########
+
+number of TADs in chromosome 10 : 142 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr10"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "10"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "10"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 10 :
+[1] "nr of cpgs in I450K:"
+[1] 22165
+[1] "nr of cpgs in EPIC:"
+[1] 39486
+[1] "intersect:"
+[1] 20291
+[1] "cpgs unique to I450K:"
+[1] 1874
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 41360
+[1] "should be the same as:"
+[1] 41360
+
+[1] "mapping TADs..."
+
+NOTE:  chr10 1281235 1281432 matched to zero CpGs.
+
+NOTE:  chr10 1281433 1281457 matched to zero CpGs.
+
+NOTE:  chr10 1281902 1281932 matched to zero CpGs.
+
+NOTE:  chr10 1281906 1281950 matched to zero CpGs.
+
+NOTE:  chr10 1281930 1281971 matched to zero CpGs.
+
+NOTE:  chr10 1282143 1282168 matched to zero CpGs.
+
+NOTE:  chr10 133431404 133434056 matched to zero CpGs.
+
+NOTE:  chr10 135477791 135477933 matched to zero CpGs.
+
+NOTE:  chr10 135485378 135485405 matched to zero CpGs.
+
+NOTE:  chr10 42628769 42628826 matched to zero CpGs.
+
+NOTE:  chr10 125099931 125099959 matched to zero CpGs.
+
+NOTE:  chr10 97439515 97439550 matched to zero CpGs.
+
+NOTE:  chr10 82848276 82848326 matched to zero CpGs.
+
+NOTE:  chr10 5270334 5270570 matched to zero CpGs.
+
+NOTE:  chr10 129049768 129049811 matched to zero CpGs.
+
+NOTE:  chr10 86508353 86508379 matched to zero CpGs.
+
+NOTE:  chr10 44764797 44764867 matched to zero CpGs.
+
+NOTE:  chr10 5264641 5264680 matched to zero CpGs.
+
+NOTE:  chr10 47971779 47971846 matched to zero CpGs.
+
+NOTE:  chr10 46118030 46118093 matched to zero CpGs.
+
+mapping TADs for chromosome 10 done.
+[1] "cpgs in tad map so far:"
+[1] 437577
+
+########## PROCESSING CHROMOSOME 11 ##########
+
+number of TADs in chromosome 11 : 193 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr11"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "11"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "11"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 11 :
+[1] "nr of cpgs in I450K:"
+[1] 26487
+[1] "nr of cpgs in EPIC:"
+[1] 46309
+[1] "intersect:"
+[1] 24642
+[1] "cpgs unique to I450K:"
+[1] 1845
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 48154
+[1] "should be the same as:"
+[1] 48154
+
+[1] "mapping TADs..."
+
+NOTE:  chr11 70801608 70801671 matched to zero CpGs.
+
+NOTE:  chr11 70801584 70801707 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609276 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 62609112 62609281 matched to zero CpGs.
+
+NOTE:  chr11 82473704 82473818 matched to zero CpGs.
+
+NOTE:  chr11 4418903 4418961 matched to zero CpGs.
+
+NOTE:  chr11 133718805 133718856 matched to zero CpGs.
+
+NOTE:  chr11 80221537 80221595 matched to zero CpGs.
+
+NOTE:  chr11 26138970 26139011 matched to zero CpGs.
+
+NOTE:  chr11 5377586 5377618 matched to zero CpGs.
+
+NOTE:  chr11 55005473 55005562 matched to zero CpGs.
+
+NOTE:  chr11 85138287 85138326 matched to zero CpGs.
+
+NOTE:  chr11 98869761 98869811 matched to zero CpGs.
+
+NOTE:  chr11 129208997 129209079 matched to zero CpGs.
+
+NOTE:  chr11 86590143 86590183 matched to zero CpGs.
+
+NOTE:  chr11 56588840 56588959 matched to zero CpGs.
+
+NOTE:  chr11 111918303 111918356 matched to zero CpGs.
+
+NOTE:  chr11 104136754 104136806 matched to zero CpGs.
+
+NOTE:  chr11 73793657 73793710 matched to zero CpGs.
+
+mapping TADs for chromosome 11 done.
+[1] "cpgs in tad map so far:"
+[1] 481053
+
+########## PROCESSING CHROMOSOME 12 ##########
+
+number of TADs in chromosome 12 : 162 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr12"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "12"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "12"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 12 :
+[1] "nr of cpgs in I450K:"
+[1] 22266
+[1] "nr of cpgs in EPIC:"
+[1] 41983
+[1] "intersect:"
+[1] 20890
+[1] "cpgs unique to I450K:"
+[1] 1376
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 43359
+[1] "should be the same as:"
+[1] 43359
+
+[1] "mapping TADs..."
+
+NOTE:  chr12 57276612 57276658 matched to zero CpGs.
+
+NOTE:  chr12 70595083 70596227 matched to zero CpGs.
+
+NOTE:  chr12 73845378 73845416 matched to zero CpGs.
+
+NOTE:  chr12 11631814 11631891 matched to zero CpGs.
+
+NOTE:  chr12 80477930 80478040 matched to zero CpGs.
+
+NOTE:  chr12 51999498 51999549 matched to zero CpGs.
+
+NOTE:  chr12 75395180 75395255 matched to zero CpGs.
+
+NOTE:  chr12 96169666 96169741 matched to zero CpGs.
+
+NOTE:  chr12 61397714 61397774 matched to zero CpGs.
+
+mapping TADs for chromosome 12 done.
+[1] "cpgs in tad map so far:"
+[1] 518966
+
+########## PROCESSING CHROMOSOME 13 ##########
+
+number of TADs in chromosome 13 : 96 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr13"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "13"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "13"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 13 :
+[1] "nr of cpgs in I450K:"
+[1] 11039
+[1] "nr of cpgs in EPIC:"
+[1] 19602
+[1] "intersect:"
+[1] 10353
+[1] "cpgs unique to I450K:"
+[1] 686
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 20288
+[1] "should be the same as:"
+[1] 20288
+
+[1] "mapping TADs..."
+
+NOTE:  chr13 25545326 25545357 matched to zero CpGs.
+
+NOTE:  chr13 48996567 48996634 matched to zero CpGs.
+
+NOTE:  chr13 98515463 98515535 matched to zero CpGs.
+
+NOTE:  chr13 55925435 55925567 matched to zero CpGs.
+
+NOTE:  chr13 87303282 87303332 matched to zero CpGs.
+
+NOTE:  chr13 31098338 31098407 matched to zero CpGs.
+
+NOTE:  chr13 23138341 23138413 matched to zero CpGs.
+
+NOTE:  chr13 51409220 51409266 matched to zero CpGs.
+
+mapping TADs for chromosome 13 done.
+[1] "cpgs in tad map so far:"
+[1] 536243
+
+########## PROCESSING CHROMOSOME 14 ##########
+
+number of TADs in chromosome 14 : 117 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr14"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "14"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "14"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 14 :
+[1] "nr of cpgs in I450K:"
+[1] 13707
+[1] "nr of cpgs in EPIC:"
+[1] 27794
+[1] "intersect:"
+[1] 13045
+[1] "cpgs unique to I450K:"
+[1] 662
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 28456
+[1] "should be the same as:"
+[1] 28456
+
+[1] "mapping TADs..."
+
+NOTE:  chr14 20084335 20084436 matched to zero CpGs.
+
+NOTE:  chr14 20079712 20079756 matched to zero CpGs.
+
+NOTE:  chr14 19491269 19491310 matched to zero CpGs.
+
+NOTE:  chr14 20083588 20083667 matched to zero CpGs.
+
+NOTE:  chr14 20085031 20085072 matched to zero CpGs.
+
+NOTE:  chr14 22629674 22629708 matched to zero CpGs.
+
+NOTE:  chr14 23023289 23023347 matched to zero CpGs.
+
+NOTE:  chr14 42419203 42519203 matched to zero CpGs.
+
+NOTE:  chr14 75954363 75954545 matched to zero CpGs.
+
+NOTE:  chr14 80752338 80752382 matched to zero CpGs.
+
+NOTE:  chr14 50288135 50288166 matched to zero CpGs.
+
+NOTE:  chr14 33325629 33325682 matched to zero CpGs.
+
+NOTE:  chr14 37367239 37367294 matched to zero CpGs.
+
+NOTE:  chr14 61481445 61481495 matched to zero CpGs.
+
+NOTE:  chr14 40293074 40293124 matched to zero CpGs.
+
+NOTE:  chr14 33732685 33732757 matched to zero CpGs.
+
+NOTE:  chr14 53104974 53105103 matched to zero CpGs.
+
+NOTE:  chr14 30946053 30946077 matched to zero CpGs.
+
+NOTE:  chr14 89122360 89122416 matched to zero CpGs.
+
+NOTE:  chr14 60423198 60423250 matched to zero CpGs.
+
+mapping TADs for chromosome 14 done.
+[1] "cpgs in tad map so far:"
+[1] 563295
+
+########## PROCESSING CHROMOSOME 15 ##########
+
+number of TADs in chromosome 15 : 113 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr15"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "15"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "15"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 15 :
+[1] "nr of cpgs in I450K:"
+[1] 13593
+[1] "nr of cpgs in EPIC:"
+[1] 26643
+[1] "intersect:"
+[1] 12877
+[1] "cpgs unique to I450K:"
+[1] 716
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 27359
+[1] "should be the same as:"
+[1] 27359
+
+[1] "mapping TADs..."
+
+NOTE:  chr15 31895395 31895455 matched to zero CpGs.
+
+NOTE:  chr15 87925704 87925775 matched to zero CpGs.
+
+NOTE:  chr15 47425477 47425507 matched to zero CpGs.
+
+NOTE:  chr15 90183085 90183165 matched to zero CpGs.
+
+NOTE:  chr15 50424979 50425047 matched to zero CpGs.
+
+NOTE:  chr15 74077910 74077960 matched to zero CpGs.
+
+NOTE:  chr15 41675495 41675539 matched to zero CpGs.
+
+mapping TADs for chromosome 15 done.
+[1] "cpgs in tad map so far:"
+[1] 589495
+
+########## PROCESSING CHROMOSOME 16 ##########
+
+number of TADs in chromosome 16 : 91 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr16"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "16"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "16"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 16 :
+[1] "nr of cpgs in I450K:"
+[1] 19519
+[1] "nr of cpgs in EPIC:"
+[1] 35001
+[1] "intersect:"
+[1] 18381
+[1] "cpgs unique to I450K:"
+[1] 1138
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 36139
+[1] "should be the same as:"
+[1] 36139
+
+[1] "mapping TADs..."
+
+NOTE:  chr16 33195765 33225916 matched to zero CpGs.
+
+NOTE:  chr16 32725049 32727213 matched to zero CpGs.
+
+NOTE:  chr16 33236807 33237113 matched to zero CpGs.
+
+NOTE:  chr16 33244881 33252299 matched to zero CpGs.
+
+NOTE:  chr16 58948653 58948743 matched to zero CpGs.
+
+NOTE:  chr16 26697177 26697212 matched to zero CpGs.
+
+mapping TADs for chromosome 16 done.
+[1] "cpgs in tad map so far:"
+[1] 621732
+
+########## PROCESSING CHROMOSOME 17 ##########
+
+number of TADs in chromosome 17 : 198 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr17"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "17"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "17"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 17 :
+[1] "nr of cpgs in I450K:"
+[1] 25331
+[1] "nr of cpgs in EPIC:"
+[1] 41468
+[1] "intersect:"
+[1] 24045
+[1] "cpgs unique to I450K:"
+[1] 1286
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 42754
+[1] "should be the same as:"
+[1] 42754
+
+[1] "mapping TADs..."
+
+NOTE:  chr17 1032060 1032122 matched to zero CpGs.
+
+NOTE:  chr17 1034755 1034799 matched to zero CpGs.
+
+NOTE:  chr17 1046327 1046363 matched to zero CpGs.
+
+NOTE:  chr17 21904120 21904192 matched to zero CpGs.
+
+NOTE:  chr17 21906549 21906797 matched to zero CpGs.
+
+NOTE:  chr17 21905911 21905938 matched to zero CpGs.
+
+NOTE:  chr17 21906549 21906701 matched to zero CpGs.
+
+NOTE:  chr17 21904349 21905908 matched to zero CpGs.
+
+NOTE:  chr17 21907104 21907251 matched to zero CpGs.
+
+NOTE:  chr17 21902177 21902414 matched to zero CpGs.
+
+NOTE:  chr17 21902177 21902603 matched to zero CpGs.
+
+NOTE:  chr17 21476995 21477047 matched to zero CpGs.
+
+NOTE:  chr17 21905459 21905512 matched to zero CpGs.
+
+NOTE:  chr17 21906514 21906654 matched to zero CpGs.
+
+NOTE:  chr17 21904327 21904445 matched to zero CpGs.
+
+NOTE:  chr17 21903194 21903225 matched to zero CpGs.
+
+NOTE:  chr17 21904120 21904164 matched to zero CpGs.
+
+NOTE:  chr17 21902695 21902739 matched to zero CpGs.
+
+NOTE:  chr17 21907547 21907603 matched to zero CpGs.
+
+NOTE:  chr17 21904481 21905908 matched to zero CpGs.
+
+NOTE:  chr17 21905911 21905938 matched to zero CpGs.
+
+NOTE:  chr17 21905431 21905453 matched to zero CpGs.
+
+NOTE:  chr17 21902739 21903587 matched to zero CpGs.
+
+NOTE:  chr17 21903986 21904045 matched to zero CpGs.
+
+NOTE:  chr17 21904517 21905441 matched to zero CpGs.
+
+NOTE:  chr17 21906739 21906797 matched to zero CpGs.
+
+NOTE:  chr17 34488876 34488905 matched to zero CpGs.
+
+NOTE:  chr17 34491234 34491271 matched to zero CpGs.
+
+NOTE:  chr17 34764760 34765322 matched to zero CpGs.
+
+NOTE:  chr17 26049845 26049919 matched to zero CpGs.
+
+NOTE:  chr17 36275293 36275604 matched to zero CpGs.
+
+NOTE:  chr17 60347095 60347168 matched to zero CpGs.
+
+NOTE:  chr17 34498668 34498691 matched to zero CpGs.
+
+NOTE:  chr17 60347829 60347874 matched to zero CpGs.
+
+NOTE:  chr17 60348641 60348694 matched to zero CpGs.
+
+NOTE:  chr17 34587957 34587981 matched to zero CpGs.
+
+NOTE:  chr17 34805131 34805188 matched to zero CpGs.
+
+NOTE:  chr17 36339816 36339859 matched to zero CpGs.
+
+NOTE:  chr17 36349221 36349315 matched to zero CpGs.
+
+NOTE:  chr17 36332383 36332452 matched to zero CpGs.
+
+NOTE:  chr17 34487793 34487826 matched to zero CpGs.
+
+NOTE:  chr17 36299090 36305000 matched to zero CpGs.
+
+NOTE:  chr17 36316746 36316785 matched to zero CpGs.
+
+NOTE:  chr17 36289042 36289079 matched to zero CpGs.
+
+NOTE:  chr17 34799298 34799446 matched to zero CpGs.
+
+NOTE:  chr17 36296946 36296997 matched to zero CpGs.
+
+NOTE:  chr17 34574842 34574873 matched to zero CpGs.
+
+NOTE:  chr17 58098152 58098196 matched to zero CpGs.
+
+NOTE:  chr17 41401108 41401193 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41400184 41400461 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41381837 41381915 matched to zero CpGs.
+
+NOTE:  chr17 41399710 41399825 matched to zero CpGs.
+
+NOTE:  chr17 41400010 41400073 matched to zero CpGs.
+
+NOTE:  chr17 41400251 41400461 matched to zero CpGs.
+
+NOTE:  chr17 41400191 41400245 matched to zero CpGs.
+
+NOTE:  chr17 41399710 41399825 matched to zero CpGs.
+
+NOTE:  chr17 41399710 41399791 matched to zero CpGs.
+
+NOTE:  chr17 41381686 41381775 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41400117 41400461 matched to zero CpGs.
+
+NOTE:  chr17 41400010 41400073 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41466141 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41400191 41400461 matched to zero CpGs.
+
+NOTE:  chr17 41466131 41466223 matched to zero CpGs.
+
+NOTE:  chr17 41401065 41401193 matched to zero CpGs.
+
+NOTE:  chr17 41529629 41529659 matched to zero CpGs.
+
+NOTE:  chr17 34346960 34347020 matched to zero CpGs.
+
+NOTE:  chr17 21998293 21998361 matched to zero CpGs.
+
+NOTE:  chr17 26364170 26364204 matched to zero CpGs.
+
+NOTE:  chr17 53869515 53869570 matched to zero CpGs.
+
+mapping TADs for chromosome 17 done.
+[1] "cpgs in tad map so far:"
+[1] 660248
+
+########## PROCESSING CHROMOSOME 18 ##########
+
+number of TADs in chromosome 18 : 77 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr18"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "18"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "18"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 18 :
+[1] "nr of cpgs in I450K:"
+[1] 5482
+[1] "nr of cpgs in EPIC:"
+[1] 14209
+[1] "intersect:"
+[1] 5223
+[1] "cpgs unique to I450K:"
+[1] 259
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 14468
+[1] "should be the same as:"
+[1] 14468
+
+[1] "mapping TADs..."
+
+NOTE:  chr18 50637620 50637681 matched to zero CpGs.
+
+NOTE:  chr18 44555338 44555415 matched to zero CpGs.
+
+NOTE:  chr18 41909778 41909819 matched to zero CpGs.
+
+NOTE:  chr18 662524 662567 matched to zero CpGs.
+
+NOTE:  chr18 41028847 41028916 matched to zero CpGs.
+
+NOTE:  chr18 5683832 5683868 matched to zero CpGs.
+
+mapping TADs for chromosome 18 done.
+[1] "cpgs in tad map so far:"
+[1] 673217
+
+########## PROCESSING CHROMOSOME 19 ##########
+
+number of TADs in chromosome 19 : 82 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr19"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "19"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "19"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 19 :
+[1] "nr of cpgs in I450K:"
+[1] 22735
+[1] "nr of cpgs in EPIC:"
+[1] 35673
+[1] "intersect:"
+[1] 21548
+[1] "cpgs unique to I450K:"
+[1] 1187
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 36860
+[1] "should be the same as:"
+[1] 36860
+
+[1] "mapping TADs..."
+
+NOTE:  chr19 23531141 23531202 matched to zero CpGs.
+
+NOTE:  chr19 38237971 38238104 matched to zero CpGs.
+
+NOTE:  chr19 40405465 40405512 matched to zero CpGs.
+
+NOTE:  chr19 45148437 45148470 matched to zero CpGs.
+
+NOTE:  chr19 54676123 54676181 matched to zero CpGs.
+
+NOTE:  chr19 54675959 54676012 matched to zero CpGs.
+
+NOTE:  chr19 55142711 55142775 matched to zero CpGs.
+
+NOTE:  chr19 54726783 54726815 matched to zero CpGs.
+
+NOTE:  chr19 54727212 54727271 matched to zero CpGs.
+
+NOTE:  chr19 54983216 54983252 matched to zero CpGs.
+
+NOTE:  chr19 50124246 50124269 matched to zero CpGs.
+
+NOTE:  chr19 55191822 55191863 matched to zero CpGs.
+
+NOTE:  chr19 55191893 55191919 matched to zero CpGs.
+
+NOTE:  chr19 55192018 55192044 matched to zero CpGs.
+
+NOTE:  chr19 55223824 55224063 matched to zero CpGs.
+
+NOTE:  chr19 40126234 40126266 matched to zero CpGs.
+
+NOTE:  chr19 34569999 34570053 matched to zero CpGs.
+
+mapping TADs for chromosome 19 done.
+[1] "cpgs in tad map so far:"
+[1] 706403
+
+########## PROCESSING CHROMOSOME 20 ##########
+
+number of TADs in chromosome 20 : 101 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr20"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "20"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "20"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 20 :
+[1] "nr of cpgs in I450K:"
+[1] 9700
+[1] "nr of cpgs in EPIC:"
+[1] 21956
+[1] "intersect:"
+[1] 9180
+[1] "cpgs unique to I450K:"
+[1] 520
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 22476
+[1] "should be the same as:"
+[1] 22476
+
+[1] "mapping TADs..."
+
+NOTE:  chr20 33776711 33776824 matched to zero CpGs.
+
+NOTE:  chr20 34127258 34127292 matched to zero CpGs.
+
+NOTE:  chr20 47132559 47132594 matched to zero CpGs.
+
+NOTE:  chr20 46524614 46524680 matched to zero CpGs.
+
+NOTE:  chr20 47131529 47131585 matched to zero CpGs.
+
+NOTE:  chr20 47131966 47132081 matched to zero CpGs.
+
+NOTE:  chr20 47131704 47131915 matched to zero CpGs.
+
+NOTE:  chr20 47131957 47132086 matched to zero CpGs.
+
+NOTE:  chr20 47131533 47131585 matched to zero CpGs.
+
+NOTE:  chr20 47131529 47131585 matched to zero CpGs.
+
+NOTE:  chr20 47132017 47132086 matched to zero CpGs.
+
+NOTE:  chr20 47132001 47132086 matched to zero CpGs.
+
+NOTE:  chr20 47132129 47132247 matched to zero CpGs.
+
+NOTE:  chr20 47132150 47132246 matched to zero CpGs.
+
+NOTE:  chr20 47131720 47131813 matched to zero CpGs.
+
+NOTE:  chr20 47132020 47132086 matched to zero CpGs.
+
+NOTE:  chr20 47132155 47132246 matched to zero CpGs.
+
+NOTE:  chr20 79556 79611 matched to zero CpGs.
+
+NOTE:  chr20 39144830 39144880 matched to zero CpGs.
+
+NOTE:  chr20 4367238 4367328 matched to zero CpGs.
+
+NOTE:  chr20 4013788 4013837 matched to zero CpGs.
+
+NOTE:  chr20 58944681 58944732 matched to zero CpGs.
+
+NOTE:  chr20 5943010 5943320 matched to zero CpGs.
+
+mapping TADs for chromosome 20 done.
+[1] "cpgs in tad map so far:"
+[1] 726352
+
+########## PROCESSING CHROMOSOME 21 ##########
+
+number of TADs in chromosome 21 : 44 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr21"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "21"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "21"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 21 :
+[1] "nr of cpgs in I450K:"
+[1] 3839
+[1] "nr of cpgs in EPIC:"
+[1] 9677
+[1] "intersect:"
+[1] 3645
+[1] "cpgs unique to I450K:"
+[1] 194
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 9871
+[1] "should be the same as:"
+[1] 9871
+
+[1] "mapping TADs..."
+
+NOTE:  chr21 39436260 39436366 matched to zero CpGs.
+
+NOTE:  chr21 43226494 43226748 matched to zero CpGs.
+
+NOTE:  chr21 18539984 18540031 matched to zero CpGs.
+
+mapping TADs for chromosome 21 done.
+[1] "cpgs in tad map so far:"
+[1] 735299
+
+########## PROCESSING CHROMOSOME 22 ##########
+
+number of TADs in chromosome 22 : 51 
+[1] "failsafe: all TAD entries labeled:"
+[1] "chr22"
+[1] "parsing out chromosome from I450K..."
+[1] "failsafe: all 450 entries labeled:"
+[1] "22"
+[1] "parsing out chromosome from EPIC..."
+[1] "failsafe: all EPIC entries labeled:"
+[1] "22"
+[1] "combining 450 and EPIC CpGs..."
+
+SUMMARY FOR CHROMOSOME 22 :
+[1] "nr of cpgs in I450K:"
+[1] 7539
+[1] "nr of cpgs in EPIC:"
+[1] 16901
+[1] "intersect:"
+[1] 7158
+[1] "cpgs unique to I450K:"
+[1] 381
+[1] "unique I450K cpgs combined with EPIC:"
+[1] 17282
+[1] "should be the same as:"
+[1] 17282
+
+[1] "mapping TADs..."
+
+NOTE:  chr22 21678464 21678532 matched to zero CpGs.
+
+NOTE:  chr22 20679200 20680623 matched to zero CpGs.
+
+NOTE:  chr22 21025149 21025185 matched to zero CpGs.
+
+NOTE:  chr22 49551599 49551658 matched to zero CpGs.
+
+NOTE:  chr22 49779990 49780015 matched to zero CpGs.
+
+NOTE:  chr22 49779914 49779936 matched to zero CpGs.
+
+NOTE:  chr22 49779990 49780015 matched to zero CpGs.
+
+NOTE:  chr22 49780461 49780494 matched to zero CpGs.
+
+NOTE:  chr22 49780055 49780105 matched to zero CpGs.
+
+NOTE:  chr22 49781048 49781428 matched to zero CpGs.
+
+mapping TADs for chromosome 22 done.
+[1] "cpgs in tad map so far:"
+[1] 749772
+
+[1] "all chromosomes processed"
+[1] "number of empty TADs:"
+[1] 418
+[1] "saving the tad map..."
+[1] "thank_you_and_goodnight"
+Copying cpg_tad_map.RData to /ess/p33/data/durable/characters/kristofs/TADpred/CpG_TAD_maps
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+19256587     slurm_cre+          1                                             00:02:21      0:0 
+19256587.ba+      batch          1        1   00:02:19          0   00:02:19   00:02:21      0:0 
+19256587.ex+     extern          1        1   00:00:00          0   00:00:00   00:02:21      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+19256587                                                                         
+19256587.ba+    401632K          0    401632K        0              0          0 
+19256587.ex+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+19256587                                                                                              
+19256587.ba+       31.95M               0         31.95M       10.81M                0         10.81M 
+19256587.ex+        0.00M               0          0.00M        0.00M                0          0.00M 
+
+Job 19256587 completed at Tue Mar 19 15:55:36 CET 2024

@@ -1,0 +1,145 @@
+---
+title: "TADpred tutorial"
+author: "Kristoffer Sandås"
+date: '2024-03-18'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Introduction
+TADpred is an adaptation of LDpred for use with methylation data.
+
+The pipeline produces methylation (risk) scores from an individual-level test set, summary statistics and a list of TAD regions.
+
+TADpred is structured as an **R project**. Always use the scripts from within the project. This ensures that R finds the correct paths. Some steps are integrated into slurm scripts, and are specific for the TSD server rules. These scripts may need to be modified on other servers.
+
+The main idea is that the TADpred directory, containing the file TADpred.Rproj, contains all scripts and data that is reused in multiple analyses, such as TAD maps and Illumina manifests. Each individual analysis is performed in a separate directory to avoid cluttering up the TADpred directory, and to avoid mixing up different analyses. Individual analysis directories can be removed or modified without altering anything essential in TADpred.
+
+The Rproject TADpred directory is referred to as the *project directory*.
+The specific directory for an analysis is referred to as the *analysis directory*.
+
+There is a **config.yaml** file in the TADpred directory where paths to 
+various data can be specified, as well as the path to the current analysis. This makes path handing inside the scripts a bit easier. I did not manage to implement config parsing in the slurm scripts so paths will
+need to be specified there separately. You can create config files for each project and rename them as you want, or reuse the same file and just change the paths in it.
+
+I have kept all functions from LDpred and bigsnpr intact so that no modification is needed to the packages. I have also kept variable names from LDpred whenever possible, for example *df_beta* and *ld*, so that LDpred documentation is easier to parse for trouble shooting.
+
+TADpred has only been constructed and tested using one set of data, so all formats follow that data. The scripts might need to be modified with other
+datasets. I have tried to make comments where this is especially important.
+
+## 2. TAD scaffold
+You need the TAD scaffold corresponding to the genome build used in the Illumina manifest you will use to map your CpGs to TADs:
+
+    hg38 - EPIC2
+    hg19 - EPIC1, 450K
+
+These scaffolds are both available in the TAD_scaffolds directory, along with the log file from their creation using UCSC LiftOver. 
+
+So nothing needs to be done in this step, and you can **move directly to "3. CpG TAD map"**.
+
+If you should want to create the TAD scaffolds from scratch the steps for doing that are:
+
+Go to https://cb.csail.mit.edu/cb/tadmap/
+
+Download the file "Scaffold in BED format (hg38)"
+
+If your Illumina manifest uses hg38 (EPIC2) 
+
+- continue with the downloaded *TADMap_scaffold_hs.bed* file.
+
+- create an empty file called *tad_scaffold_hg38.txt* in the TAD_scaffolds
+directory on the server.
+
+- copy-paste the contents of the downloaded file on your computer into the *tad_scaffold_hg38.txt* file on the server.
+
+If your Illumina manifest uses hg19 (EPIC1, 450K): 
+
+- convert the downloaded *TADMap_scaffold_hs.bed* file from the web page with UCSC LiftOver:
+https://genome.ucsc.edu/cgi-bin/hgLiftOver. Settings: Original: Human - hg38, New: Human - hg19. Leave the rest of the settings as they are.
+
+- you can get information about the conversion by clicking on "Display failure file" and "Explain failure messages" after the conversion is done.
+
+- create an empty file called *tad_scaffold_conversion.txt* in the TAD_scaffolds directory on the server.
+
+- copy-paste the contents of the downloaded LiftOver file on your computer into the *tad_scaffold_conversion.txt* file on the server. This is sometimes hacky because of the large number of lines, and you might need to copy paste only the first line once, then copy all and paste over the first line on the server.
+
+- run the script *TAD_scaffolds/convert_tad_scaffolds.r*. If you run from terminal, run it from the TADpred directory: ```$ Rscript TAD_scaffolds/covert_tad_scaffolds.r ```
+
+The tad_scaffold file needs to be in this format:
+    
+    chromosome  start end
+    for example
+    chr1	735380	1285380
+
+## 3. CpG TAD map
+In this part, CpGs are mapped by their genomic location to the TAD regions.
+There is already a TAD map calculated using hg19 and both EPIC1 and I450K.
+It is an RData file found in the directory CpG_TAD_maps, along with a log file from its creation. 
+
+If you dont want to create a new one you can continue with this TAD map and **move 
+to step 4. Intersecting CpGs**.
+
+If you want to create a new CpG TAD map follow the instructions in CpG_TAD_maps/create_cpg_tad_map.r
+
+There is an option to use both EPIC1 and I450K when creating the CpG TAD map,
+which is recommended since it maps the most CpGs. Problematic probes may be 
+included in this, but if the problematic probes have been removed in the 
+training or test data, it will not matter since only probes present in all datasets will be used in the analysis. 
+
+## 4. Intersecting CpGs
+From now on the steps are specific for each analysis, so make sure you have set the correct analysis_path in the config file.
+
+Here we find the CpGs that are common to all datasets used. This will remove
+CpGs that will not be in the final analysis and speed up processing times.
+
+Follow the instructions in *find_intersecting_cpgs.r*
+
+## 5. Cluster CpGs
+We need to cluster the CpGs from out intersection vector in the previous step 
+according to the TAD regions in the TAD map.
+
+Follow the instructions in *cluster_cpgs_into_tads.r*
+
+## 6. Create correlation matrix
+Now we will create a block correlation matrix using the TAD clusters and
+our training data. If you have an independent dataset to create the correlation
+matrix with this should work as well though it has not been tested.
+
+The corr-data folder created in this step cant be moved once it's created without
+changing variables in the SFBM object, so make sure all paths are correct.
+
+Follow the instructions in the script *create_correlation_matrix.r*
+
+## 7. Create df_beta
+We need to transform the test data into the LDpred format in order to use the program on methylation data.
+
+Follow the instructions in *create_df_beta.r*
+
+## 8. Calculate h2
+We need to calculate the h2 variable from the df_beta and ld. This
+represents heritability in LDpred, which does not apply to methylation
+data. It is a purely mathematical process however and will not disrupt
+the algorithm. 
+
+Follow the instructions in *calculate_h2.r*
+
+## 9. Run LDpred-auto
+Finally we are ready to run LDpred-auto. This part uses the data we
+have produced so far to create a set of posterior weights for the 
+scores. The algorithm runs a series of simulations, creating the scores as the mean of all simulations that converged. 
+
+The final weights are saved in a vector called beta_auto. There is a pdf file produced which graphs out the path of the Gibbs sampler 
+for all simulations. If something seems wrong these plots can be used to examing the quality of the run.
+
+Follow the instuctions in *run_LDpred_auto.r*
+
+## 10. Apply and evaluate scores
+Apply posterior weights to test data and evaluate the scores using
+partial correlation, logistic regression and pseudo R2.
+
+Follow the instructions in *apply_and_evaluate_scores.r*
+
+

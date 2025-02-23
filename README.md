@@ -1,11 +1,7 @@
-# masters_project_2024
+This is the code and data associated with the article *"Using LDpred2 to Adapt Polygenic Risk Score Techniques for Methylation Score Creation"*
 
-The directory *TADpred* contains a prototype pipeline for TADpred, including a tutorial and data files needed.
+The directory *TADpred* contains a pipeline for performing the TAD-based analysis, including a tutorial and data files needed.
 
-All analyses were performed following the pipeline in the TADpred directory, with additional extra steps for creating the different matrices in directories *chromosome_correlation_blocks*, *CMR_correlation_blocks* and *CMR_correlation_blocks_no_singletons*.
+All analyses were performed following the pipeline in the TADpred directory, with additional extra steps for creating the different matrices in directories *CMR_correlation_blocks* and *CMR_correlation_blocks_no_singletons*.
 
-The *pdf files* are the plots from the Gibbs sampler QC.
-
-*prior_top_cpgs* and *posterior_top_cpgs* contain the genes associated with the CpGs with the highest absolute effect sizes for both the prior and posterior training data. *all_new_in_posterior_scores* are the genes appearing in the posterior list that do not appear in the prior. These files were created with the *bioanalysis.r* script.
-
-
+The file *SCZ_MWAS_meta_analysis_GSE80417_GSE152027_GSE84727.csv* contains the MWAS meta-analysis used as training data.
